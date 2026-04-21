@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Social-to-Lead Agentic Workflow
 
 This repository contains the Inflx, an AI-powered conversational agent for the fictional SaaS company AutoStream. The agent seamlessly classifies user intents, answers product queries using a local RAG pipeline, and triggers a mock tool to capture high-intent leads.
@@ -46,3 +47,6 @@ To deploy this intelligent agent on WhatsApp, I would use the **WhatsApp Busines
 2. **Event Parsing & State**: Extract the incoming text message and the sender's WhatsApp phone number from the JSON payload. The phone number serves excellently as the LangGraph `thread_id`, tying the user to a specific conversation state in the `MemorySaver`.
 3. **Agent Invocation**: The webhook endpoint invokes the LangGraph agent (`agent_app.invoke()`) asynchronously with the user's message. The agent executes RAG tools, intent detection, and internal tool routing natively.
 4. **Sending Responses**: Extract the final computed `.content` from the last message in LangGraph's updated state. We then immediately fire an HTTP POST request back to WhatsApp's API `/messages` endpoint bearing the AI-generated text to be delivered back to the user's phone.
+=======
+# ai_agent
+>>>>>>> 6abe5129a810fac253bb780666719de54903ef56
